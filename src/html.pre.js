@@ -25,7 +25,7 @@ function pre(context) {
   context.response = context.response || {}
   context.response.headers = context.response.headers || {};
   context.response.headers['Cache-Control'] = 'no-cache';
-  context.response.headers['Expires'] = `${new Date()}`;;
+  context.response.headers['Surrogate-Control'] = 'max-age';
   context.content.time = `${new Date()}`;
 }
 
