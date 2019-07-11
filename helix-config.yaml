@@ -1,0 +1,15 @@
+#
+# helix configuration for local development
+#
+version: 1
+
+definitions:
+  defaults:
+    - &defaultRepo "https://github.com/kptdobe/helix-demo.git"
+
+strains:
+  - name: default
+    code: https://github.com/kptdobe/helix-demo.git#master
+    content: https://github.com/kptdobe/helix-demo.git#master
+    static: https://github.com/kptdobe/helix-demo.git/htdocs#master
+    package: acapt/github-com--kptdobe--helix-demo--master-dirty

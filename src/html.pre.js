@@ -22,6 +22,9 @@
  * @param context.content The content
  */
 function pre(context) {
+  context.response = context.response || {}
+  context.response.headers = context.response.headers || {};
+  context.response.headers['Cache-Control'] = 'no-cache';
   context.content.time = `${new Date()}`;
 }
 
