@@ -25,6 +25,7 @@ function pre(context) {
   context.response = context.response || {}
   context.response.headers = context.response.headers || {};
   context.response.headers['Cache-Control'] = 'no-cache';
+  context.response.headers['Expires'] = '0';
   context.content.time = `${new Date()}`;
 }
 
