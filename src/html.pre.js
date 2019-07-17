@@ -15,7 +15,7 @@
  * limitations under the License.
  *
  */
-const { preFetch } = require('./utils.js');
+
 
 /**
  * The 'pre' function that is executed before the HTML is rendered
@@ -27,6 +27,3 @@ function pre(context) {
 }
 
 module.exports.pre = pre;
-module.exports.before = {
-  fetch: preFetch,
-};
